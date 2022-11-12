@@ -1,7 +1,7 @@
-import React, {FC} from 'react';
+import React, {FC, useEffect} from 'react';
+import {VanillaTilt} from "../utils/vanilla-tilt";
 
 import './MyWorks.scss'
-import {VanillaTilt} from "../utils/vanilla-tilt";
 
 interface MyWorksProps {
 	works: IWork[]
@@ -15,13 +15,11 @@ interface IWork {
 
 const MyWorks: FC <MyWorksProps> = ({works}) => {
 
-	VanillaTilt.init(document.querySelectorAll(".card"), {
+	useEffect(() => VanillaTilt.init(document.querySelectorAll(".card"), {
 		max: 25,
 		speed: 1000
-	});
+	}), [])
 
-	//It also supports NodeList
-	VanillaTilt.init(document.querySelectorAll(".card"));
 
 	return (
 		<div className="container">

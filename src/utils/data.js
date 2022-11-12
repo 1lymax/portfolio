@@ -14,4 +14,19 @@ export const myWorks = [
 		title: 'Dev Three',
 		description:  'fdbfd d rgdfg f dfgreg ewjutkr uyrkr krt krtkyt rkry krty etrj retj ert ter jkkrek'
 	},
+	{
+		id: '04',
+		title: 'Dev One',
+		description:  'fdbfd d rgdfg f dfgreg ewjutkr uyrkr krt krtkyt rkry krty etrj retj ert ter jkkrek'
+	},
+	{
+		id: '05',
+		title: 'Dev Two',
+		description:  'fdbfd d rgdfg f dfgreg ewjutkr uyrkr krt krtkyt rkry krty etrj retj ert ter jkkrek'
+	},
+	{
+		id: '06',
+		title: 'Dev Three',
+		description:  'fdbfd d rgdfg f dfgreg ewjutkr uyrkr krt krtkyt rkry krty etrj retj ert ter jkkrek'
+	},
 ]
