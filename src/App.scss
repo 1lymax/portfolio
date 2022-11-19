@@ -14,8 +14,10 @@ body {
   align-items: center;
   min-height: 100vh;
   width: 100%;
-  background: url("assets/background-city.jpg") no-repeat;
-  background-size: cover;
+  background: #000000;
+  //background: url("assets/background-city.jpg") no-repeat;
+  //background-size: cover;
+
 }
 
 .main, #root {
@@ -23,4 +25,5 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 }

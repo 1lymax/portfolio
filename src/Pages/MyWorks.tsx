@@ -10,7 +10,8 @@ interface MyWorksProps {
 interface IWork {
 	id: string;
 	title: string;
-	description: string
+	image?: string | undefined;
+	description: string | React.ReactNode
 }
 
 const MyWorks: FC <MyWorksProps> = ({works}) => {
@@ -31,7 +32,10 @@ const MyWorks: FC <MyWorksProps> = ({works}) => {
 						<p>
 							{work.description}
 						</p>
-						<a href="/">Buy now</a>
+						{work?.image &&
+							<div className="image" style={{background: `url(${work.image})`, backgroundSize: 'cover'}}></div>
+						}
+						<a href="/">More info...</a>
 					</div>
 				</div>
 			)}
