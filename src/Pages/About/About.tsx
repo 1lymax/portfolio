@@ -32,12 +32,11 @@ const About = () => {
                     cursor={true}
                 />
                 <div className="about-description">
-                    My story has began in 1994...<br/>
+                    My story have began in 1994...<br/>
                     First computer with Dx-2 66Mhz processor have become to me when I was fourteen.
-                    First database on QBasic... MS-Dos and Multimedia :) <br/>
+                    First database on QBasic... MS-Dos and Multimedia... :) <br/>
                     Now I have more than 20 years of working experience in IT-industry. 2+ years of developing web applications in different
                     languages and stacks.
-
                 </div>
             </div>
             <Portrait/>
