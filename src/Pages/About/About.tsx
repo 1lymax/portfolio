@@ -8,8 +8,8 @@ const About = () => {
 
     return (
         <div className="about-wrapper">
-            <Portrait/>
             <div className="content-wrapper">
+
                 <div className="about-name">
                     My name is Maxim Lysogorov.
                 </div>
@@ -40,7 +40,7 @@ const About = () => {
 
                 </div>
             </div>
-
+            <Portrait/>
         </div>
     );
 };
