@@ -1,3 +1,4 @@
+@import "../../assets/css/colors";
 
 .about-wrapper {
   position: relative;
@@ -35,7 +36,7 @@
     font-weight: 600;
     top: -300px;
     left: -50px;
-    color: #00ffeb;
+    color: $main;
     text-wrap: none;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
     line-height: 0.7em;

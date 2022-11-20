@@ -1,5 +1,5 @@
 import React from 'react';
-import Portrait from "./Portrait";
+import Portrait from "../Portrait";
 
 import './About.scss'
 import {TypeAnimation} from "react-type-animation";
@@ -10,24 +10,6 @@ const About = () => {
         <div className="about-wrapper">
             <Portrait/>
             <div className="content-wrapper">
-                {/*<TypeAnimation*/}
-                {/*    className="about-header"*/}
-                {/*    sequence={[*/}
-                {/*        4000,*/}
-                {/*        'My name is',*/}
-                {/*        1000,*/}
-                {/*        'My name is Lysogorov',*/}
-                {/*        600,*/}
-                {/*        'My name is Maxim',*/}
-                {/*        1000,*/}
-                {/*        'My name is Maxim Lysogorov.',*/}
-                {/*        () => {// Place optional callbacks anywhere in the array*/}
-                {/*        }*/}
-                {/*    ]}*/}
-                {/*    wrapper="div"*/}
-                {/*    cursor={false}*/}
-                {/*/>*/}
-
                 <div className="about-name">
                     My name is Maxim Lysogorov.
                 </div>
