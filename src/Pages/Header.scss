@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   top: 0;
+  margin-bottom: 80px;
 
 
   .switch {
@@ -38,6 +39,7 @@
   }
 
   &:after {
+    background-image: url("../assets/imac-black.jpg");
     content: '';
     top: 0;
     right: 0;
@@ -46,9 +48,7 @@
     position: absolute;
     min-height: 100vh;
     height: 1600px;
-    background-image: url("../assets/imac-black.jpg");
     background-position: center;
-    //background: linear-gradient(45deg, #00001c, #000e4f);
     background-size: cover;
     background-attachment: scroll;
     transition: 1s linear;
