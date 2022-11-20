@@ -77,7 +77,10 @@ const MyWorks: FC<MyWorksProps> = ({works, worksType}) => {
                         <div className={["back", back === index ? "active" : "hidden"].join(" ")}
                              onClick={() => setBack(-1)}>
                             {work.backface.link &&
-								<a href={work.backface.link} target="_blank" rel="noreferrer">{work.backface.link}</a>
+								<a href={work.backface.link} target="_blank" rel="noreferrer">
+                                    {work.backface.link}
+                                    <i className="fa-solid fa-arrow-up-right-from-square"/>
+                                </a>
                             }
                             {work.backface.description}
                         </div>

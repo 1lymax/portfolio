@@ -12,7 +12,7 @@ export const myWorksData = [
         image: "/img/webdev-01.png",
         description: '',
         backface: {
-            link: 'https://rentserv.herokuapp.com',
+            link: 'rentserv.herokuapp.com',
             description:
                 <ul>
                     <li>React.js.</li>
