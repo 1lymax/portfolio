@@ -50,6 +50,7 @@ ul.sci {
       box-shadow: 0 5px 45px rgba(0,0,0,0.1);
       overflow: hidden;
       transition: top .5s, z-index 0s, transform .5s;
+      transition: top .5s, z-index 0s, -webkit-transform .5s;
       transition-delay: .5s, .5s, 0s;
 
       &:before {
