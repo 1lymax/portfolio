@@ -13,6 +13,7 @@ const Skills:FC <SkillsProps> = ({mySkills, topMargin}) => {
 
     return (
         <div className="skills-wrapper" id="skills">
+            <div className="skills-header">Skills</div>
             <ul className="skills-tabs noselect">
                 {mySkills.map(group =>
                     <li className={["skills-link", activeTab===group.id ? 'active' : ''].join(" ")}
