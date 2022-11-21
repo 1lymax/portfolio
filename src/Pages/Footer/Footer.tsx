@@ -4,7 +4,7 @@ import './Footer.scss'
 
 const Footer = () => {
     return (
-        <div className="footer">
+        <div className="footer" id="contacts">
             <ul className="sci">
                 {/*<li><a href="/src/Pages"><i className="fa-brands fa-youtube"></i></a></li>*/}
                 <li>

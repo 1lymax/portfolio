@@ -1,4 +1,8 @@
 @import 'assets/css/colors';
+html {
+  scroll-behavior: smooth;
+}
+
 
 * {
   margin: 0;
@@ -27,4 +31,13 @@ body {
   flex-direction: column;
   justify-content: center;
 
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

@@ -29,9 +29,9 @@ const MyWorks: FC<MyWorksProps> = ({works, worksType}) => {
     }), [activeGroup])
 
     return (
-        <div className="container">
-            <div className="myworks-header">Projects</div>
-            <div className="myworks-nav">
+        <div className="container" id="portfolio">
+            <div className="myworks-header noselect">Projects</div>
+            <div className="myworks-nav noselect">
                 <ul>
                     {worksType.map(type =>
                         <li className={activeGroup === type ? 'active' : ''}
@@ -50,7 +50,7 @@ const MyWorks: FC<MyWorksProps> = ({works, worksType}) => {
                 {works.filter(work => work.workType === activeGroup).length === 0 &&
 					<div className="card">
 						<div className="front">
-							<div className="front-content">
+							<div className="front-content noselect">
 								<h2>#00</h2>
 								<h3>Empty</h3>
 								<p>
@@ -66,7 +66,7 @@ const MyWorks: FC<MyWorksProps> = ({works, worksType}) => {
                         <div className={["front", back !== index ? "active" : "hidden"].join(" ")}
                              onClick={() => setBack(index)}
                         >
-                            <div className="front-content">
+                            <div className="front-content noselect">
                                 <h2>{work.id}</h2>
                                 <h3>{work.title}</h3>
                                 <p>

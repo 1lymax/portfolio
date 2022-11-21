@@ -12,8 +12,8 @@ const Skills:FC <SkillsProps> = ({mySkills, topMargin}) => {
     const [activeTab, setActiveTab] = useState(1);
 
     return (
-        <div className="skills-wrapper">
-            <ul className="skills-tabs">
+        <div className="skills-wrapper" id="skills">
+            <ul className="skills-tabs noselect">
                 {mySkills.map(group =>
                     <li className={["skills-link", activeTab===group.id ? 'active' : ''].join(" ")}
                         onClick={() => setActiveTab(group.id)}
@@ -24,7 +24,7 @@ const Skills:FC <SkillsProps> = ({mySkills, topMargin}) => {
                 )}
             </ul>
             <div className="skills-floor"></div>
-            <div className="skills-content">
+            <div className="skills-content noselect">
 
                 <div className="skills-box">
                     {mySkills.map(group =>
