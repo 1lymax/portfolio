@@ -17,13 +17,6 @@
     display: inline-block;
 
     &:after {
-      //position: absolute;
-      //content: 'Skills';
-      //left: 0;
-      //height: 350px;
-      //overflow: hidden;
-      ////transform: scale(1.15) perspective(405px) translateX(-475px) translateY(96px) rotateX(240deg);
-      //transform: scale(1.49) perspective(120px) translateX(0px) skewX(0deg) translateY(81px) rotateX(-104deg);
       background: linear-gradient(to bottom, transparent, rgba(41, 141, 141, 0.8));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;

@@ -6,9 +6,8 @@ const Footer = () => {
     return (
         <div className="footer" id="contacts">
             <ul className="sci">
-                {/*<li><a href="/src/Pages"><i className="fa-brands fa-youtube"></i></a></li>*/}
                 <li>
-                    <a target="_blank" rel="noreferrer" href="/src/Pages">
+                    <a target="_blank" rel="noreferrer" href="https://t.me/Lrmaks">
                     <i className="fa-brands fa-telegram"/>
                     </a>
                 </li>
