@@ -8,3 +8,11 @@
   background: url("../assets/me.jpg");
   background-size: cover;
 }
+
+
+@media screen and (max-width: 992px) {
+  .portrait-card {
+    display: none;
+  }
+  
+}

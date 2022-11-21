@@ -35,7 +35,10 @@ const MyWorks: FC<MyWorksProps> = ({works, worksType}) => {
                     {worksType.map(type =>
                         <li className={active === type ? 'active' : ''}
                             onClick={() => setActive(type)}
-                        >{type}</li>
+                            key={type}
+                        >
+                            {type}
+                        </li>
                     )}
                 </ul>
             </div>

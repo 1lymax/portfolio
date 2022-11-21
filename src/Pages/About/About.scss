@@ -79,3 +79,10 @@
     }
   }
 }
+
+
+@media screen and (max-width: 768px) {
+  .about-wrapper .content-wrapper {
+    width: 370px;
+  }
+}
