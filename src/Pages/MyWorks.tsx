@@ -21,12 +21,12 @@ interface MyWorksProps {
 
 const MyWorks: FC<MyWorksProps> = ({works, worksType}) => {
     const [back, setBack] = useState(-1);
-    const [active, setActive] = useState(worksType[0]);
+    const [activeGroup, setActiveGroup] = useState(worksType[0]);
 
     useEffect(() => VanillaTilt.init(document.querySelectorAll(".card"), {
         max: 25,
         speed: 1000
-    }), [])
+    }), [activeGroup])
 
     return (
         <div className="container">
@@ -34,9 +34,9 @@ const MyWorks: FC<MyWorksProps> = ({works, worksType}) => {
             <div className="myworks-nav">
                 <ul>
                     {worksType.map(type =>
-                        <li className={active === type ? 'active' : ''}
+                        <li className={activeGroup === type ? 'active' : ''}
                             onClick={() => {
-                                setActive(type)
+                                setActiveGroup(type)
                                 setBack(-1)
                             }}
                             key={type}
@@ -47,7 +47,7 @@ const MyWorks: FC<MyWorksProps> = ({works, worksType}) => {
                 </ul>
             </div>
             <div className="myworks-content">
-                {works.filter(work => work.workType === active).length === 0 &&
+                {works.filter(work => work.workType === activeGroup).length === 0 &&
 					<div className="card">
 						<div className="front">
 							<div className="front-content">
@@ -61,7 +61,7 @@ const MyWorks: FC<MyWorksProps> = ({works, worksType}) => {
                     </div>
                 }
 
-                {works.filter(work => work.workType === active).map((work, index) =>
+                {works.filter(work => work.workType === activeGroup).map((work, index) =>
                     <div className="card" key={work.id}>
                         <div className={["front", back !== index ? "active" : "hidden"].join(" ")}
                              onClick={() => setBack(index)}
