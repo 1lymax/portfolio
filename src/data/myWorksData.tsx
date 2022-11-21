@@ -67,6 +67,27 @@ export const myWorksData = [
                     <li>Connected API\'s of Webmoney, Liqpay, PrivatbankUA, Perfectmoney, Liberty Reserve, SMS-service payment systems. </li>
                     <li>Online-shop for e-vouchers and digital content.</li>
                 </ul>
-        }
+        },
+
+    },
+    {
+        id: '04',
+        workType: 'Full dev',
+        title: 'E-commerce',
+        image: "/img/webdev-04.png",
+        description: '',
+        backface: {
+            link: 'myshkin.com.ua',
+            description:
+                <ul>
+                    <li>Prestashop.</li>
+                    <li>PHP / Javascript.</li>
+                    <li>CSS / Bootstrap.</li>
+                    <li>XML.</li>
+                    <li>Development && Deployment && Adaptation.</li>
+                    <li>Custom XML interfaces.</li>
+                </ul>
+        },
+
     },
 ]

@@ -14,11 +14,10 @@
 
   .myworks-header {
     position: relative;
-    left: -80px;
-    top: -20px;
     font-size: 10rem;
     color: rgba(6, 217, 213, 0.4);
     font-weight: 900;
+    transform: translate(-80px, -20px);
     transition: .5s ease;
   }
 
@@ -286,9 +285,8 @@
 @media screen and (max-width: 992px) {
   .container {
     .myworks-header {
-      left: -53px;
-      top: -50px;
       font-size: 6rem;
+      transform: translate(-50px, -53px);
       transition: .5s ease-in-out;
     }
   }
