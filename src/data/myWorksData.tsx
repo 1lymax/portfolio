@@ -90,4 +90,60 @@ export const myWorksData = [
         },
 
     },
+
+    {
+        id: '01',
+        workType: 'Hooks',
+        title: 'useScroll',
+        image: "/img/webdev-hook-01.png",
+        description: '',
+        backface: {
+            link: 'github.com/1lymax/react-hooks',
+            description:
+            <ul>
+                <li>
+                    Load portion of data from api server when intersecting object in the DOM.
+                </li>
+                <li>Infinite scroll.</li>
+            </ul>
+        },
+
+    },
+    {
+        id: '02',
+        workType: 'Hooks',
+        title: 'useDebounce',
+        image: "/img/webdev-hook-02.png",
+        description: '',
+        backface: {
+            link: 'github.com/1lymax/react-hooks',
+            description:
+                <ul>
+                    <li>
+                        Debounce request to api server when searching something in frontend.
+                    </li>
+                </ul>
+        },
+
+    },
+
+    {
+        id: '01',
+        workType: 'CSS Effects',
+        title: 'Glass tabs',
+        image: "/img/webdev-csseffects-01.png",
+        description: '',
+        backface: {
+            link: 'github.com/1lymax/css-assets',
+            description:
+                <ul>
+                    <li>
+                        Stylish glass tabs with light effect on content
+                    </li>
+                </ul>
+        },
+
+    },
+
+
 ]

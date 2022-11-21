@@ -10,6 +10,7 @@ interface MyWorksProps {
         workType: string;
         title: string;
         image?: string | undefined;
+        imageOver?: string | undefined;
         description: string | React.ReactNode;
         backface: {
             link?: string;
@@ -20,7 +21,7 @@ interface MyWorksProps {
 
 const MyWorks: FC<MyWorksProps> = ({works, worksType}) => {
     const [back, setBack] = useState(-1);
-    const [active, setActive] = useState('Full dev');
+    const [active, setActive] = useState(worksType[0]);
 
     useEffect(() => VanillaTilt.init(document.querySelectorAll(".card"), {
         max: 25,
@@ -34,7 +35,10 @@ const MyWorks: FC<MyWorksProps> = ({works, worksType}) => {
                 <ul>
                     {worksType.map(type =>
                         <li className={active === type ? 'active' : ''}
-                            onClick={() => setActive(type)}
+                            onClick={() => {
+                                setActive(type)
+                                setBack(-1)
+                            }}
                             key={type}
                         >
                             {type}
@@ -70,7 +74,7 @@ const MyWorks: FC<MyWorksProps> = ({works, worksType}) => {
                                 </p>
                                 {work?.image &&
 									<div className="image"
-										 style={{background: `url(${work.image})`, backgroundSize: 'cover'}}></div>
+										 style={{background: `url(${work.image}) 0 0 / cover no-repeat`}}></div>
                                 }
                                 <div className="more-info">
                                     More info...
