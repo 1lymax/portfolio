@@ -22,15 +22,19 @@ export const mySkills: Array<mySkillProps> = [
         skill: [
             {
                 name: "React.js",
-                alignMargin: -110
+                alignMargin: -104
             },
             {
-                name: "Redux-Toolkit",
+                name: "Typescript",
                 alignMargin: -87
             },
             {
-                name: "RTK-Query",
+                name: "Redux-Toolkit",
                 alignMargin: -58
+            },
+            {
+                name: "RTK-Query",
+                alignMargin: -18
             },
         ]
     },

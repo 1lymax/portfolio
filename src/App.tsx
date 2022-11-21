@@ -1,5 +1,5 @@
 import React from 'react';
-import MyWorks from "./Pages/MyWorks";
+import MyWorks from "./Pages/MyWorks/MyWorks";
 import {mySkills, topMargin} from "./data/data";
 
 import './App.scss'

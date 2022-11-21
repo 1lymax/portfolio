@@ -1,5 +1,5 @@
 import React, {FC, useEffect, useState} from 'react';
-import {VanillaTilt} from "../utils/vanilla-tilt";
+import {VanillaTilt} from "../../utils/vanilla-tilt";
 
 import './MyWorks.scss'
 

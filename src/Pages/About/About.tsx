@@ -1,5 +1,5 @@
 import React from 'react';
-import Portrait from "../Portrait";
+import Portrait from "./Portrait";
 
 import './About.scss'
 import {TypeAnimation} from "react-type-animation";
@@ -7,10 +7,10 @@ import {TypeAnimation} from "react-type-animation";
 const About = () => {
 
     return (
-        <div className="about-wrapper" id="about">
+        <div className="about-wrapper">
             <div className="content-wrapper">
 
-                <div className="about-name noselect">
+                <div className="about-name noselect" id="about">
                     My name is Maxim Lysogorov.
                 </div>
 
@@ -33,7 +33,7 @@ const About = () => {
                 />
                 <div className="about-description noselect">
                     My story have began in 1994...<br/>
-                    First computer with Dx-2 66Mhz processor have become to me when I was fourteen.
+                    First computer with DX-2 66Mhz processor have become to me when I was fourteen.
                     First database on QBasic... MS-Dos and Multimedia... :) <br/>
                     Now I have more than 20 years of working experience in IT-industry. 2+ years of developing web applications in different
                     languages and stacks.

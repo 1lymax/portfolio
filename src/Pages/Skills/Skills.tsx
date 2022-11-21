@@ -24,7 +24,10 @@ const Skills:FC <SkillsProps> = ({mySkills, topMargin}) => {
                     </li>
                 )}
             </ul>
-            <div className="skills-floor"></div>
+
+            <div className="skills-floor">
+
+            </div>
             <div className="skills-content noselect">
 
                 <div className="skills-box">
