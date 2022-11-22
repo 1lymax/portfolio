@@ -35,7 +35,12 @@ const Skills:FC <SkillsProps> = ({mySkills, topMargin}) => {
                             key={group.id}
                         >
                             {group.skill.map((skill, index) =>
-                                <li style={{"--k":topMargin[index], [group.align]: skill.alignMargin} as React.CSSProperties}
+                                <li style={{
+                                    "--k": topMargin[index],
+                                    [group.align]: skill.alignMargin,
+                                    "--label": `"${skill.name}"`,
+                                    "--skX": `${group.skewX}deg`,
+                                } as React.CSSProperties}
                                     key={skill.name}
                                 >
                                     {skill.name}

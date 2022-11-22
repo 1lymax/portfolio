@@ -8,6 +8,7 @@ export interface mySkillProps {
     id: number,
     title: string,
     align: string,
+    skewX: number,
     skill: Array<{
         name: string;
         alignMargin: number
@@ -19,22 +20,23 @@ export const mySkills: Array<mySkillProps> = [
         id: 1,
         title: "Frontend",
         align: "left",
+        skewX: -20,
         skill: [
             {
                 name: "React.js",
-                alignMargin: -104
+                alignMargin: -70
             },
             {
                 name: "Typescript",
-                alignMargin: -87
-            },
-            {
-                name: "Redux-Toolkit",
                 alignMargin: -58
             },
             {
+                name: "Redux-Toolkit",
+                alignMargin: -34
+            },
+            {
                 name: "RTK-Query",
-                alignMargin: -18
+                alignMargin: -4
             },
         ]
     },
@@ -42,6 +44,7 @@ export const mySkills: Array<mySkillProps> = [
         id: 2,
         title: "Backend",
         align: "left",
+        skewX: -10,
         skill: [
             {
                 name: "Node.js",
@@ -65,6 +68,7 @@ export const mySkills: Array<mySkillProps> = [
         id: 3,
         title: "UI/UX",
         align: "right",
+        skewX: 0,
         skill: [
             {
                 name: "SCSS/SASS",
@@ -84,6 +88,7 @@ export const mySkills: Array<mySkillProps> = [
         id: 4,
         title: "Supporting",
         align: "right",
+        skewX: 0,
         skill: [
             {
                 name: "CI/CD",
