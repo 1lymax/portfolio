@@ -13,7 +13,9 @@ const Skills:FC <SkillsProps> = ({mySkills, topMargin}) => {
 
     return (
         <div className="skills-wrapper" id="skills">
-            {/*<div className="skills-header">Skills</div>*/}
+            <div className="skills-header">
+                <div className="skills-label">Skills</div>
+            </div>
             <ul className="skills-tabs noselect">
                 {mySkills.map(group =>
                     <li className={["skills-link", activeTab===group.id ? 'active' : ''].join(" ")}
@@ -24,10 +26,6 @@ const Skills:FC <SkillsProps> = ({mySkills, topMargin}) => {
                     </li>
                 )}
             </ul>
-
-            <div className="skills-floor">
-
-            </div>
             <div className="skills-content noselect">
 
                 <div className="skills-box">

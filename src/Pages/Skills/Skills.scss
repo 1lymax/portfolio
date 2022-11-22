@@ -6,29 +6,58 @@
 
   .skills-header {
     position: absolute;
-    font-size: 10rem;
+    width: 100%;
+    height: 330px;
     color: #085e5e;
-    font-weight: 900;
-    transform: translate(200px, -152px);
-    //transition: .5s ease;
-    text-align: center;
-    perspective: 50px;
+    transform: translate(0px, -200px) rotate(180deg);
+    perspective: 17px;
     perspective-origin: 50% 100%;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+
+
+    .skills-label {
+      position: relative;
+      left: 7%;
+      top: 42px;
+      color: rgb(0, 0, 0);
+      z-index: 1;
+      font-family: sans-serif;
+      font-size: 5rem;
+      font-weight: 600;
+      transform: rotate(180deg);
+      perspective: 48px;
+      perspective-origin: 50% 100%;
+      text-shadow: 0 0 1px rgb(41 141 141);
+
+      &:after {
+        content: "Skills";
+        position: absolute;
+        top: 29px;
+        right: -103px;
+        bottom: 0;
+        left: 0;
+        transform: scale(1.22, -1) rotateX(-35deg) skewX(27deg);
+        transform-origin: 50% 87%;
+        opacity: 1;
+        filter: blur(1px)
+      }
+    }
+
 
     &:after {
-      background: linear-gradient(to bottom, transparent, rgba(41, 141, 141, 0.8));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      content: "Skills";
+      background: linear-gradient(to bottom, rgba(41, 141, 141, 0.1), rgb(41, 141, 141));
+      content: "";
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
-      transform: scaleY(-0.5) rotateX(-9deg);
-      transform-origin: 50% 79%;
-      opacity: 0.3;
+      transform: scaleY(-.8) rotateX(-9deg);
+      transform-origin: 50% 26%;
+      opacity: 1;
 
     }
   }
@@ -50,13 +79,14 @@
       min-width: 100px;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
-      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), transparent);
-      border-top: 1px solid rgba(255, 255, 255, .5);
-      border-left: 1px solid rgba(255, 255, 255, .5);
-      border-right: 1px solid rgba(255, 255, 255, .1);
-      border-bottom: 1px solid rgba(255, 255, 255, .1);
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent);
+      border-top: 1px solid rgba(255, 255, 255, 0.6);
+      border-left: 1px solid rgba(255, 255, 255, 0.5);
+      border-right: 1px solid rgba(255, 255, 255, 0.3);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      -webkit-backdrop-filter: blur(2px);
       backdrop-filter: blur(2px);
-      transition: .5s;
+      transition: 0.5s;
 
       &:before, &:after {
         content: '';
@@ -110,24 +140,6 @@
         filter: blur(24px);
       }
     }
-  }
-
-  .skills-floor {
-    position: absolute;
-    width: 100%;
-    height: 750px;
-    z-index: -1;
-    border-top: 1px solid rgb(255, 255, 255);
-    border-left: 2px solid rgb(255, 255, 255);
-    border-right: 1px solid rgb(150, 150, 150);
-    background: linear-gradient(to top, rgba(255, 255, 255, 0.1), transparent);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    transform: perspective(424px) translateY(-330px) rotateX(38deg);
-    overflow-x: clip;
-    box-shadow: inset 0px -1px 3px #fff,
-    inset 0px 4px 2px #fff,
-    0px 14px 24px rgb(0 0 0);
   }
 
   .skills-content {
