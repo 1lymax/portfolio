@@ -24,25 +24,28 @@
       top: 42px;
       color: rgb(0, 0, 0);
       z-index: 1;
-      font-family: sans-serif;
+      font-family: Montserrat, sans-serif;
       font-size: 5rem;
+      letter-spacing: 0.3rem;
       font-weight: 600;
       transform: rotate(180deg);
-      perspective: 48px;
-      perspective-origin: 50% 100%;
-      text-shadow: 0 0 1px rgb(41 141 141);
+      perspective: 64px;
+      perspective-origin: 64% 100%;
+      text-shadow: 1px -1px 5px rgb(41 141 141);
 
       &:after {
         content: "Skills";
         position: absolute;
-        top: 29px;
-        right: -103px;
+        top: 23px;
+        right: -253px;
         bottom: 0;
         left: 0;
-        transform: scale(1.22, -1) rotateX(-35deg) skewX(27deg);
+        transform: scale(1.14, -1) rotateX(-35deg) skewX(36deg);
+        -moz-transform: scale(1.11, 0.2) rotateX(-5.5deg) rotateZ(0deg) rotateY(0deg) skewX(10deg) translateY(4px) translateX(2px);
         transform-origin: 50% 87%;
         opacity: 1;
-        filter: blur(1px)
+        filter: blur(1px);
+        text-shadow: none;
       }
     }
 
@@ -131,12 +134,12 @@
       }
 
       &:after {
-        background: rgba(0, 255, 255, 0.4);
+        background: rgba(0, 255, 255, 0.6);
         height: 310%;
         width: 150%;
         top: -6px;
         left: -32px;
-        transform: perspective(2em) rotateX(33deg) scale(1, -0.5);
+        transform: perspective(1.3em) rotateX(33deg) scale(1, -0.5) skewX(var(--skX));
         filter: blur(24px);
       }
     }
@@ -160,6 +163,7 @@
 
         li {
           list-style: none;
+          font-family: Montserrat, sans-serif;
           position: relative;
           margin-left: calc(30px - (20px * var(--k)));
           transition: 1s;
@@ -173,13 +177,14 @@
             right: 0;
             bottom: 0;
             left: 0;
-            background: linear-gradient(rgba(0, 0, 0, 1.5), rgba(0, 0, 0, 1.5));
+            background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, 1));
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            -webkit-text-fill-color: rgba(0,0,0,0.4);
             transform: scale(1, 2) rotateX(-99deg) skewX(var(--skX));
             transform-origin: 100% 95%;
             opacity: 1;
             filter: blur(2px);
+            text-shadow: none;
           }
         }
       }
@@ -194,11 +199,12 @@
           color: #000000;
           position: relative;
           margin-left: calc(30px - 20px * var(--k));
-          margin-top: calc(30px + -45px / var(--k));
+          margin-top: calc(37px + -28px / var(--k));
           font-size: calc(18px * var(--k));
           line-height: calc(0.5em + 0.1em * var(--k));
           transition: 1s;
           z-index: 1;
+          text-shadow: 2px -2px 5px rgb(41 141 141);
         }
       }
 

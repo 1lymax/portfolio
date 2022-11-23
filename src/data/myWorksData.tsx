@@ -92,6 +92,25 @@ export const myWorksData = [
     },
 
     {
+        id: '05',
+        workType: 'Full dev',
+        title: 'This portfolio',
+        image: "/img/webdev-05.png",
+        description: '',
+        backface: {
+            link: 'github.com/1lymax/portfolio',
+            description:
+                <ul>
+                    <li>React.js.</li>
+                    <li>Typescript.</li>
+                    <li>SASS / SCSS.</li>
+                    <li>CI/CD.</li>
+                </ul>
+        },
+
+    },
+
+    {
         id: '01',
         workType: 'Hooks',
         title: 'useScroll',

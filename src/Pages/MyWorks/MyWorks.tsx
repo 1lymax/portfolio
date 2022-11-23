@@ -74,6 +74,7 @@ const MyWorks: FC<MyWorksProps> = ({works, worksType}) => {
                                 </p>
                                 {work?.image &&
 									<div className="image"
+                                         onMouseOver={(e) => console.log(e)}
 										 style={{background: `url(${work.image}) 0 0 / cover no-repeat`}}></div>
                                 }
                                 <div className="more-info">

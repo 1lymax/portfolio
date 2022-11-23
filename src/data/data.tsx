@@ -23,20 +23,20 @@ export const mySkills: Array<mySkillProps> = [
         skewX: -20,
         skill: [
             {
-                name: "React.js",
-                alignMargin: -70
-            },
-            {
-                name: "Typescript",
-                alignMargin: -58
+                name: "RTK-Query",
+                alignMargin: -108
             },
             {
                 name: "Redux-Toolkit",
-                alignMargin: -34
+                alignMargin: -90
             },
             {
-                name: "RTK-Query",
-                alignMargin: -4
+                name: "Typescript",
+                alignMargin: -63
+            },
+            {
+                name: "React.js",
+                alignMargin: -18
             },
         ]
     },
@@ -47,19 +47,19 @@ export const mySkills: Array<mySkillProps> = [
         skewX: -10,
         skill: [
             {
-                name: "Node.js",
+                name: "Django",
                 alignMargin: -11
             },
             {
-                name: "Express",
+                name: "Python",
                 alignMargin: -2
             },
             {
-                name: "Python",
+                name: "Express",
                 alignMargin: 8
             },
             {
-                name: "Django",
+                name: "Node.js",
                 alignMargin: 16
             },
         ]
@@ -68,19 +68,19 @@ export const mySkills: Array<mySkillProps> = [
         id: 3,
         title: "UI/UX",
         align: "right",
-        skewX: 0,
+        skewX: 1,
         skill: [
             {
-                name: "SCSS/SASS",
-                alignMargin: 11
+                name: "Material-UI",
+                alignMargin: 40
             },
             {
                 name: "Semantic-UI",
-                alignMargin: 6
+                alignMargin: 48
             },
             {
-                name: "Material-UI",
-                alignMargin: -2
+                name: "SCSS/SASS",
+                alignMargin: 56
             },
         ]
     },
@@ -88,7 +88,7 @@ export const mySkills: Array<mySkillProps> = [
         id: 4,
         title: "Supporting",
         align: "right",
-        skewX: 0,
+        skewX: 10,
         skill: [
             {
                 name: "CI/CD",

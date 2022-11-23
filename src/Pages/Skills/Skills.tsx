@@ -21,6 +21,7 @@ const Skills:FC <SkillsProps> = ({mySkills, topMargin}) => {
                     <li className={["skills-link", activeTab===group.id ? 'active' : ''].join(" ")}
                         onClick={() => setActiveTab(group.id)}
                         key={group.id}
+                        style={{"--skX": `${group.skewX}deg`,} as React.CSSProperties}
                     >
                         {group.title}
                     </li>
