@@ -48,7 +48,7 @@ ul.sci {
       background: rgba(255,255,255,.1);
       backdrop-filter: blur(4px);
       z-index: 1;
-      box-shadow: 0 5px 45px rgba(0,0,0,0.1);
+      box-shadow: 1px 1px 18px rgba(0,0,0,0.5);
       overflow: hidden;
       transition: top .5s, z-index 0s, transform .5s;
       transition: top .5s, z-index 0s, -webkit-transform .5s;
