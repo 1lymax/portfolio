@@ -10,7 +10,7 @@ interface MyWorksProps {
         workType: string;
         title: string;
         image?: string | undefined;
-        imageOver?: string | undefined;
+        imageAnimated?: string | undefined;
         description: string | React.ReactNode;
         backface: {
             link?: string;
@@ -22,11 +22,13 @@ interface MyWorksProps {
 const MyWorks: FC<MyWorksProps> = ({works, worksType}) => {
     const [back, setBack] = useState(-1);
     const [activeGroup, setActiveGroup] = useState(worksType[0]);
+    const [imageAnimated, setImageAnimated] = useState('');
 
     useEffect(() => VanillaTilt.init(document.querySelectorAll(".card"), {
         max: 25,
         speed: 1000
     }), [activeGroup])
+
 
     return (
         <div className="container" id="portfolio">
@@ -56,9 +58,9 @@ const MyWorks: FC<MyWorksProps> = ({works, worksType}) => {
 								<p>
 									There is no completed works under this section now.
 								</p>
-                            </div>
+							</div>
 						</div>
-                    </div>
+					</div>
                 }
 
                 {works.filter(work => work.workType === activeGroup).map((work, index) =>
@@ -74,8 +76,14 @@ const MyWorks: FC<MyWorksProps> = ({works, worksType}) => {
                                 </p>
                                 {work?.image &&
 									<div className="image"
-                                         onMouseOver={(e) => console.log(e)}
-										 style={{background: `url(${work.image}) 0 0 / cover no-repeat`}}></div>
+										 onMouseOver={() => setImageAnimated(work.id)}
+										 onMouseLeave={() => setImageAnimated('')}
+										 style={{
+                                             background: `url(${
+                                                 imageAnimated === work.id && work.imageAnimated ? work.imageAnimated : work.image 
+                                             }) 0 0 / cover no-repeat`
+                                         }}
+									></div>
                                 }
                                 <div className="more-info">
                                     More info...
@@ -87,8 +95,8 @@ const MyWorks: FC<MyWorksProps> = ({works, worksType}) => {
                             {work.backface.link &&
 								<a href={work.backface.link} target="_blank" rel="noreferrer">
                                     {work.backface.link}
-                                    <i className="fa-solid fa-arrow-up-right-from-square"/>
-                                </a>
+									<i className="fa-solid fa-arrow-up-right-from-square"/>
+								</a>
                             }
                             {work.backface.description}
                         </div>

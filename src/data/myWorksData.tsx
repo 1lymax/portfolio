@@ -151,6 +151,7 @@ export const myWorksData = [
         workType: 'CSS Effects',
         title: 'Glass tabs',
         image: "/img/webdev-csseffects-01.png",
+        //imageAnimated: "/img/webdev-01.png",
         description: '',
         backface: {
             link: 'github.com/1lymax/css-assets',
