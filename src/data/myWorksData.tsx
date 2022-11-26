@@ -278,6 +278,24 @@ export const myWorksData = [
 
     },
     {
+        id: '08',
+        workType: 'CSS Effects',
+        title: 'Glass buttons',
+        image: "/img/webdev-csseffects-08.gif",
+        imageAnimated: "/img/webdev-csseffects-anim-08.gif",
+        description: '',
+        backface: {
+            link: 'github.com/1lymax/css-assets',
+            description:
+                <ul>
+                    <li>
+                        Glass buttons with neon effect
+                    </li>
+                </ul>
+        },
+
+    },
+    {
         id: '01',
         workType: 'Components',
         title: 'Dynamic Counter',
