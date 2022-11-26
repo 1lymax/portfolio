@@ -277,5 +277,26 @@ export const myWorksData = [
         },
 
     },
+    {
+        id: '01',
+        workType: 'Components',
+        title: 'Dynamic Counter',
+        image: "/img/webdev-components-01.gif",
+        imageAnimated: "/img/webdev-components-anim-01.gif",
+        description: '',
+        backface: {
+            link: 'github.com/1lymax/dynamic-counter',
+            description:
+                <ul>
+                    <li>
+                        React.js
+                    </li>
+                    <li>
+                        Dynamic counter React Component
+                    </li>
+                </ul>
+        },
+
+    },
 
 ]
