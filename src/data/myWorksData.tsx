@@ -110,6 +110,8 @@ export const myWorksData = [
 
     },
 
+
+
     {
         id: '01',
         workType: 'Hooks',
@@ -146,12 +148,15 @@ export const myWorksData = [
 
     },
 
+
+    // CSS-Effects
+
     {
         id: '01',
         workType: 'CSS Effects',
         title: 'Glass tabs',
-        image: "/img/webdev-csseffects-01.png",
-        //imageAnimated: "/img/webdev-01.png",
+        image: "/img/webdev-csseffects-01.gif",
+        imageAnimated: "/img/webdev-csseffects-anim-01.gif",
         description: '',
         backface: {
             link: 'github.com/1lymax/css-assets',
@@ -164,6 +169,113 @@ export const myWorksData = [
         },
 
     },
+    {
+        id: '02',
+        workType: 'CSS Effects',
+        title: 'CSS Loader',
+        image: "/img/webdev-csseffects-02.gif",
+        imageAnimated: "/img/webdev-csseffects-anim-02.gif",
+        description: '',
+        backface: {
+            link: 'github.com/1lymax/css-assets',
+            description:
+                <ul>
+                    <li>
+                        CSS Loader
+                    </li>
+                </ul>
+        },
 
+    },
+    {
+        id: '03',
+        workType: 'CSS Effects',
+        title: 'CSS Loader',
+        image: "/img/webdev-csseffects-03.gif",
+        imageAnimated: "/img/webdev-csseffects-anim-03.gif",
+        description: '',
+        backface: {
+            link: 'github.com/1lymax/css-assets',
+            description:
+                <ul>
+                    <li>
+                        CSS Loader
+                    </li>
+                </ul>
+        },
+
+    },
+    {
+        id: '04',
+        workType: 'CSS Effects',
+        title: 'Animated spinner',
+        image: "/img/webdev-csseffects-04.gif",
+        imageAnimated: "/img/webdev-csseffects-anim-04.gif",
+        description: '',
+        backface: {
+            link: 'github.com/1lymax/css-assets',
+            description:
+                <ul>
+                    <li>
+                        Animated spinner
+                    </li>
+                </ul>
+        },
+
+    },
+    {
+        id: '05',
+        workType: 'CSS Effects',
+        title: 'Custom scroll',
+        image: "/img/webdev-csseffects-05.gif",
+        imageAnimated: "/img/webdev-csseffects-anim-05.gif",
+        description: '',
+        backface: {
+            link: 'github.com/1lymax/css-assets',
+            description:
+                <ul>
+                    <li>
+                        Custom stylish scroll
+                    </li>
+                </ul>
+        },
+
+    },
+    {
+        id: '06',
+        workType: 'CSS Effects',
+        title: 'Search box',
+        image: "/img/webdev-csseffects-06.gif",
+        imageAnimated: "/img/webdev-csseffects-anim-06.gif",
+        description: '',
+        backface: {
+            link: 'github.com/1lymax/css-assets',
+            description:
+                <ul>
+                    <li>
+                        Animated search box
+                    </li>
+                </ul>
+        },
+
+    },
+    {
+        id: '07',
+        workType: 'CSS Effects',
+        title: 'Card border',
+        image: "/img/webdev-csseffects-07.gif",
+        imageAnimated: "/img/webdev-csseffects-anim-07.gif",
+        description: '',
+        backface: {
+            link: 'github.com/1lymax/css-assets',
+            description:
+                <ul>
+                    <li>
+                        Neon card border effect
+                    </li>
+                </ul>
+        },
+
+    },
 
 ]
