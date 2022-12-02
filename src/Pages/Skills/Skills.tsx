@@ -1,7 +1,7 @@
 import React, {FC, useState} from 'react';
 
 import './Skills.scss'
-import {mySkillProps} from "../../data/data";
+import {mySkillProps} from "../../data/mySkillsData";
 
 interface SkillsProps {
     mySkills: mySkillProps[],

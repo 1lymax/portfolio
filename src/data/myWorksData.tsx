@@ -2,13 +2,13 @@ export const worksType = [
     'Full dev', 'Hooks', 'CSS Effects', 'Components'
 ]
 
+
 export const myWorksData = [
     {
-        id: '01',
+        id: 1,
+        num: '01',
         workType: 'Full dev',
         title: 'E-Commerce',
-        image: "/img/webdev-01.png",
-        description: '',
         backface: {
             link: 'rentserv.herokuapp.com',
             description:
@@ -27,12 +27,10 @@ export const myWorksData = [
         }
     },
     {
-        id: '02',
+        id: 2,
+        num: '02',
         workType: 'Full dev',
         title: 'Web-storage',
-        image: "/img/webdev-02.png",
-        description: '',
-        link: '',
         backface: {
             link: 'cloudisx.herokuapp.com',
             description:
@@ -50,11 +48,10 @@ export const myWorksData = [
         }
     },
     {
-        id: '03',
+        id: 3,
+        num: '03',
         workType: 'Full dev',
         title: 'E-currency Exchanger',
-        image: "/img/webdev-03.png",
-        description: '',
         backface: {
             link: 'github.com/1lymax/obmenov.com',
             description:
@@ -64,18 +61,19 @@ export const myWorksData = [
                     <li>Fully automated 24/7 E-currency exchanger.</li>
                     <li>User authorization, profile, cabinet, personal discount system.</li>
                     <li>Affiliate program, admin panel, cron tasks.</li>
-                    <li>Connected API\'s of Webmoney, Liqpay, PrivatbankUA, Perfectmoney, Liberty Reserve, SMS-service payment systems. </li>
+                    <li>Connected API\'s of Webmoney, Liqpay, PrivatbankUA, Perfectmoney, Liberty Reserve, SMS-service
+                        payment systems.
+                    </li>
                     <li>Online-shop for e-vouchers and digital content.</li>
                 </ul>
         },
 
     },
     {
-        id: '04',
+        id: 4,
+        num: '04',
         workType: 'Full dev',
-        title: 'E-commerce',
-        image: "/img/webdev-04.png",
-        description: '',
+        title: 'E-commerce 02',
         backface: {
             link: 'myshkin.com.ua',
             description:
@@ -92,11 +90,10 @@ export const myWorksData = [
     },
 
     {
-        id: '05',
+        id: 5,
+        num: '05',
         workType: 'Full dev',
-        title: 'This portfolio',
-        image: "/img/webdev-05.png",
-        description: '',
+        title: 'Portfolio',
         backface: {
             link: 'github.com/1lymax/portfolio',
             description:
@@ -111,39 +108,32 @@ export const myWorksData = [
     },
 
 
-
     {
-        id: '01',
+        id: 6,
+        num: '01',
         workType: 'Hooks',
         title: 'useScroll',
-        image: "/img/webdev-hook-01.png",
-        description: '',
-        backface: {
-            link: 'github.com/1lymax/react-hooks',
-            description:
-            <ul>
-                <li>
-                    Load portion of data from api server when intersecting object in the DOM.
-                </li>
-                <li>Infinite scroll.</li>
-            </ul>
-        },
-
-    },
-    {
-        id: '02',
-        workType: 'Hooks',
-        title: 'useDebounce',
-        image: "/img/webdev-hook-02.png",
-        description: '',
         backface: {
             link: 'github.com/1lymax/react-hooks',
             description:
                 <ul>
                     <li>
-                        Debounce request to api server when searching something in frontend.
+                        Load portion of data from api server when intersecting object in the DOM.
                     </li>
+                    <li>Infinite scroll.</li>
                 </ul>
+        },
+
+    },
+    {
+        id: 7,
+        num: '02',
+        workType: 'Hooks',
+        title: 'useDebounce',
+        backface: {
+            link: 'github.com/1lymax/react-hooks',
+            description:
+                <ul><li>Debounce request to api server when searching something in frontend.</li></ul>
         },
 
     },
@@ -152,166 +142,120 @@ export const myWorksData = [
     // CSS-Effects
 
     {
-        id: '01',
+        id: 8,
+        num: '01',
         workType: 'CSS Effects',
-        title: 'Glass tabs',
-        image: "/img/webdev-csseffects-01.gif",
-        imageAnimated: "/img/webdev-csseffects-anim-01.gif",
-        description: '',
+        title: 'Glass Tabs',
+        haveExample: true,
         backface: {
             link: 'github.com/1lymax/css-assets',
             description:
-                <ul>
-                    <li>
-                        Stylish glass tabs with light effect on content
-                    </li>
-                </ul>
+                <ul><li>Stylish glass tabs with light effect on content</li></ul>
         },
 
     },
     {
-        id: '02',
+        id: 9,
+        num: '02',
         workType: 'CSS Effects',
         title: 'CSS Loader',
-        image: "/img/webdev-csseffects-02.gif",
-        imageAnimated: "/img/webdev-csseffects-anim-02.gif",
-        description: '',
+        haveExample: true,
         backface: {
             link: 'github.com/1lymax/css-assets',
             description:
-                <ul>
-                    <li>
-                        CSS Loader
-                    </li>
-                </ul>
+                <ul><li>CSS Loader</li></ul>
         },
 
     },
     {
-        id: '03',
+        id: 10,
+        num: '03',
         workType: 'CSS Effects',
-        title: 'CSS Loader',
-        image: "/img/webdev-csseffects-03.gif",
-        imageAnimated: "/img/webdev-csseffects-anim-03.gif",
-        description: '',
+        title: 'CSS Loader 02',
+        haveExample: true,
         backface: {
             link: 'github.com/1lymax/css-assets',
             description:
-                <ul>
-                    <li>
-                        CSS Loader
-                    </li>
-                </ul>
+                <ul><li>CSS Loader</li></ul>
         },
 
     },
     {
-        id: '04',
+        id: 11,
+        num: '04',
         workType: 'CSS Effects',
-        title: 'Animated spinner',
-        image: "/img/webdev-csseffects-04.gif",
-        imageAnimated: "/img/webdev-csseffects-anim-04.gif",
-        description: '',
+        title: 'Animated Spinner',
+        haveExample: true,
         backface: {
             link: 'github.com/1lymax/css-assets',
             description:
-                <ul>
-                    <li>
-                        Animated spinner
-                    </li>
-                </ul>
+                <ul><li>Animated spinner</li></ul>
         },
 
     },
     {
-        id: '05',
+        id: 12,
+        num: '05',
         workType: 'CSS Effects',
-        title: 'Custom scroll',
-        image: "/img/webdev-csseffects-05.gif",
-        imageAnimated: "/img/webdev-csseffects-anim-05.gif",
-        description: '',
+        title: 'Custom Scroll',
+        haveExample: true,
         backface: {
             link: 'github.com/1lymax/css-assets',
             description:
-                <ul>
-                    <li>
-                        Custom stylish scroll
-                    </li>
-                </ul>
+                <ul><li>Custom stylish scroll</li></ul>
         },
 
     },
     {
-        id: '06',
+        id: 13,
+        num: '06',
         workType: 'CSS Effects',
-        title: 'Search box',
-        image: "/img/webdev-csseffects-06.gif",
-        imageAnimated: "/img/webdev-csseffects-anim-06.gif",
-        description: '',
+        title: 'Search Box',
+        haveExample: true,
         backface: {
             link: 'github.com/1lymax/css-assets',
             description:
-                <ul>
-                    <li>
-                        Animated search box
-                    </li>
-                </ul>
+                <ul><li>Animated search box</li></ul>
         },
 
     },
     {
-        id: '07',
+        id: 14,
+        num: '07',
         workType: 'CSS Effects',
-        title: 'Card border',
-        image: "/img/webdev-csseffects-07.gif",
-        imageAnimated: "/img/webdev-csseffects-anim-07.gif",
-        description: '',
+        title: 'Styled Cards',
+        haveExample: true,
         backface: {
             link: 'github.com/1lymax/css-assets',
             description:
-                <ul>
-                    <li>
-                        Neon card border effect
-                    </li>
-                </ul>
+                <ul><li>Neon card border effect</li></ul>
         },
 
     },
     {
-        id: '08',
+        id: 15,
+        num: '08',
         workType: 'CSS Effects',
-        title: 'Glass buttons',
-        image: "/img/webdev-csseffects-08.gif",
-        imageAnimated: "/img/webdev-csseffects-anim-08.gif",
-        description: '',
+        title: 'Glass Buttons',
+        haveExample: true,
         backface: {
             link: 'github.com/1lymax/css-assets',
             description:
-                <ul>
-                    <li>
-                        Glass buttons with neon effect
-                    </li>
-                </ul>
+                <ul><li>Glass buttons with neon effect</li></ul>
         },
 
     },
     {
-        id: '01',
+        id: 16,
+        num: '01',
         workType: 'Components',
         title: 'Dynamic Counter',
-        image: "/img/webdev-components-01.gif",
-        imageAnimated: "/img/webdev-components-anim-01.gif",
-        description: '',
+        haveExample: true,
         backface: {
             link: 'github.com/1lymax/dynamic-counter',
             description:
-                <ul>
-                    <li>
-                        React.js
-                    </li>
-                    <li>
-                        Dynamic counter React Component
-                    </li>
+                <ul><li>React.js</li>
+                    <li>Dynamic counter React Component</li>
                 </ul>
         },
 

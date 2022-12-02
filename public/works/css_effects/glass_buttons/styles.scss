@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  background: linear-gradient(45deg, #600000, #010b3f);
+}
+
+.myworks-nav {
+  position: relative;
+
+  ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    li {
+      &:hover {
+
+        //&:before {
+        //  visibility: hidden;
+        //}
+
+
+        color: #00ffd8;
+        text-shadow: 0 0 5px rgba(2, 255, 235, 1);
+        background: rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 25px rgb(20, 215, 186);
+        transition: color .2s, background-color .5s, box-shadow 1s;
+        transition-delay: .0s, .1s, .1s;
+
+        //&:before {
+        //  visibility: hidden;
+        //  transition: 0s;
+        //}
+      }
+    }
+
+    li {
+      position: relative;
+      cursor: pointer;
+      top: 0;
+      width: 170px;
+      height: 80px;
+      display: flex;
+      margin: 10px;
+      text-decoration: none;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5em;
+      font-family: Montserrat, sans-serif;
+      border-radius: 15px;
+      overflow: hidden;
+      border-top: 1px solid rgba(255, 255, 255, .5);
+      border-left: 1px solid rgba(255, 255, 255, .5);
+      border-bottom: 1px solid rgba(70, 70, 70, .5);
+      border-right: 1px solid rgba(70, 70, 70, .5);
+      backdrop-filter: blur(5px);
+      z-index: 1;
+      color: #1e8d7d;;
+      background: rgba(5, 241, 218, 0.1);
+      box-shadow: 5px 5px 25px rgba(0, 0, 0, 1);
+      transition: color .4s, background-color .2s, box-shadow 1s, width .5s, height .5s, font-size .5s;
+      transition-delay: .2s, .0s, .3s;
+
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 100%;
+        background: rgba(255, 255, 255, .5);
+        transform: skewX(45deg) translateX(210px);
+        transition: .7s;
+      }
+
+      &:hover {
+
+        &:before {
+          transform: skewX(45deg) translateX(-150px);
+        }
+      }
+    }
+  }
+}

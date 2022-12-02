@@ -3,7 +3,6 @@ export const topMargin = [
     1.3, 2, 2.8, 4, 5.5
 ]
 
-
 export interface mySkillProps {
     id: number,
     title: string,
