@@ -1,8 +1,7 @@
 import React, {FC, useEffect, useState} from 'react';
-import {VanillaTilt} from "../../utils/vanilla-tilt";
-// @ts-ignore
 
 import './MyWorks.scss'
+import {VanillaTilt} from "../../utils/vanilla-tilt";
 import {imageAnimatedPath, imagePath} from "../../utils/path";
 
 interface MyWorksProps {
@@ -90,7 +89,7 @@ const MyWorks: FC<MyWorksProps> = ({works, worksType, setModalId}) => {
                             <div className={["back", back === index ? "active" : "hidden"].join(" ")}
                                  onClick={() => setBack(-1)}>
                                 {work.backface.link &&
-									<a href={work.backface.link} target="_blank" rel="noreferrer">
+									<a href={`https://${work.backface.link}`} target="_blank" rel="noreferrer">
                                         {work.backface.link}
 										<i className="fa-solid fa-arrow-up-right-from-square"/>
 									</a>
