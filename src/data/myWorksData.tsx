@@ -14,7 +14,7 @@ export const myWorksData = [
             description:
                 <ul>
                     <li>React.js.</li>
-                    <li>Python/Django</li>
+                    <li>Python / Django.</li>
                     <li>Semantic-UI.</li>
                     <li>Material-UI / SASS.</li>
                     <li>REST.</li>
