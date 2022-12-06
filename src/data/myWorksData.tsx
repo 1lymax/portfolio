@@ -61,7 +61,7 @@ export const myWorksData = [
                     <li>Fully automated 24/7 E-currency exchanger.</li>
                     <li>User authorization, profile, cabinet, personal discount system.</li>
                     <li>Affiliate program, admin panel, cron tasks.</li>
-                    <li>Connected API\'s of Webmoney, Liqpay, PrivatbankUA, Perfectmoney, Liberty Reserve, SMS-service
+                    <li>Connected API's of Webmoney, Liqpay, PrivatbankUA, Perfectmoney, Liberty Reserve, SMS-service
                         payment systems.
                     </li>
                     <li>Online-shop for e-vouchers and digital content.</li>
