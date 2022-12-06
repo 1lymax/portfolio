@@ -32,6 +32,12 @@ const MyWorks: FC<MyWorksProps> = ({works, worksType, setModalId}) => {
         setModalId(workId)
     }
 
+    const openBackface = (e, index) => {
+        e.stopPropagation()
+        e.preventDefault()
+        setBack(index)
+    }
+
     useEffect(() => VanillaTilt.init(document.querySelectorAll(".card"), {
         max: 25,
         speed: 1000
@@ -79,7 +85,7 @@ const MyWorks: FC<MyWorksProps> = ({works, worksType, setModalId}) => {
                                          }}
                                     />
                                     <div className="buttons-container">
-                                        <div className="more-info" onClick={() => setBack(index)}>
+                                        <div className="more-info" onClick={(e) => openBackface(e, index)}>
                                             More info...
                                         </div>
                                     </div>
