@@ -11,21 +11,24 @@
 
 .modal-enter {
   transform: translateY(120%);
-  transition: width 500ms;
+  opacity: 0;
 }
 
 .modal-enter-active {
   transform: translateY(0px);
-  transition: transform 500ms ease-in;
+  opacity: 1;
+  transition: transform 500ms ease-in, opacity .5s;
 }
 
 .modal-exit {
   transform: translateY(0px);
+  opacity: 1;
 }
 
 .modal-exit-active {
   transform: translateY(120%);
-  transition: transform 500ms ease-in;
+  opacity: 0;
+  transition: transform 500ms ease-in, opacity .5s;
 }
 
 .modal {

@@ -10,7 +10,7 @@ interface MyWorksProps {
     works: Array<{
         id: number;
         num: string;
-        workType: string;
+        type: string;
         title: string;
         haveExample?: boolean;
         backface: {
@@ -38,6 +38,10 @@ const MyWorks: FC<MyWorksProps> = ({works, worksType, setModalId}) => {
         setBack(index)
     }
 
+    useEffect(() => {
+        setWorksShow(works.filter(work => work.type === worksType[0]))
+    }, []);
+
     useEffect(() => VanillaTilt.init(document.querySelectorAll(".card"), {
         max: 25,
         speed: 1000
@@ -53,7 +57,7 @@ const MyWorks: FC<MyWorksProps> = ({works, worksType, setModalId}) => {
                         <li className={group === type ? 'active' : ''}
                             onClick={() => {
                                 setGroup(type)
-                                setWorksShow(works.filter(work => work.workType === type))
+                                setWorksShow(works.filter(work => work.type === type))
                                 setBack(-1)
                             }}
                             key={type}

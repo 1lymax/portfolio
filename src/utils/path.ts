@@ -4,7 +4,7 @@ import {myWorksData} from "../data/myWorksData";
 export const getDirFilePath = (workId: number) => {
     const work = myWorksData.filter(work => work.id === workId)[0]
     const workName = work.title.toLowerCase().replaceAll(" ", "_")
-    const dir = work.workType.toLowerCase().replaceAll(" ", "_")
+    const dir = work.type.toLowerCase().replaceAll(" ", "_")
     return `${dir}/${workName}`
 }
 

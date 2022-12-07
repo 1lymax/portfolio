@@ -7,7 +7,7 @@ export const myWorksData = [
     {
         id: 1,
         num: '01',
-        workType: 'Full dev',
+        type: 'Full dev',
         title: 'E-Commerce',
         backface: {
             link: 'rentserv.herokuapp.com',
@@ -29,7 +29,7 @@ export const myWorksData = [
     {
         id: 2,
         num: '02',
-        workType: 'Full dev',
+        type: 'Full dev',
         title: 'Web-storage',
         backface: {
             link: 'cloudisx.herokuapp.com',
@@ -50,7 +50,7 @@ export const myWorksData = [
     {
         id: 3,
         num: '03',
-        workType: 'Full dev',
+        type: 'Full dev',
         title: 'E-currency Exchanger',
         backface: {
             link: 'github.com/1lymax/obmenov.com',
@@ -72,7 +72,7 @@ export const myWorksData = [
     {
         id: 4,
         num: '04',
-        workType: 'Full dev',
+        type: 'Full dev',
         title: 'E-commerce 02',
         backface: {
             link: 'myshkin.com.ua',
@@ -92,7 +92,7 @@ export const myWorksData = [
     {
         id: 5,
         num: '05',
-        workType: 'Full dev',
+        type: 'Full dev',
         title: 'Portfolio',
         backface: {
             link: 'github.com/1lymax/portfolio',
@@ -111,7 +111,7 @@ export const myWorksData = [
     {
         id: 6,
         num: '01',
-        workType: 'Hooks',
+        type: 'Hooks',
         title: 'useScroll',
         backface: {
             link: 'github.com/1lymax/react-hooks',
@@ -128,7 +128,7 @@ export const myWorksData = [
     {
         id: 7,
         num: '02',
-        workType: 'Hooks',
+        type: 'Hooks',
         title: 'useDebounce',
         backface: {
             link: 'github.com/1lymax/react-hooks',
@@ -144,7 +144,7 @@ export const myWorksData = [
     {
         id: 8,
         num: '01',
-        workType: 'CSS Effects',
+        type: 'CSS Effects',
         title: 'Glass Tabs',
         haveExample: true,
         backface: {
@@ -157,7 +157,7 @@ export const myWorksData = [
     {
         id: 9,
         num: '02',
-        workType: 'CSS Effects',
+        type: 'CSS Effects',
         title: 'CSS Loader',
         haveExample: true,
         backface: {
@@ -170,7 +170,7 @@ export const myWorksData = [
     {
         id: 10,
         num: '03',
-        workType: 'CSS Effects',
+        type: 'CSS Effects',
         title: 'CSS Loader 02',
         haveExample: true,
         backface: {
@@ -183,7 +183,7 @@ export const myWorksData = [
     {
         id: 11,
         num: '04',
-        workType: 'CSS Effects',
+        type: 'CSS Effects',
         title: 'Animated Spinner',
         haveExample: true,
         backface: {
@@ -196,7 +196,7 @@ export const myWorksData = [
     {
         id: 12,
         num: '05',
-        workType: 'CSS Effects',
+        type: 'CSS Effects',
         title: 'Custom Scroll',
         haveExample: true,
         backface: {
@@ -209,7 +209,7 @@ export const myWorksData = [
     {
         id: 13,
         num: '06',
-        workType: 'CSS Effects',
+        type: 'CSS Effects',
         title: 'Search Box',
         haveExample: true,
         backface: {
@@ -222,7 +222,7 @@ export const myWorksData = [
     {
         id: 14,
         num: '07',
-        workType: 'CSS Effects',
+        type: 'CSS Effects',
         title: 'Styled Cards',
         haveExample: true,
         backface: {
@@ -235,7 +235,7 @@ export const myWorksData = [
     {
         id: 15,
         num: '08',
-        workType: 'CSS Effects',
+        type: 'CSS Effects',
         title: 'Glass Buttons',
         haveExample: true,
         backface: {
@@ -248,7 +248,7 @@ export const myWorksData = [
     {
         id: 16,
         num: '01',
-        workType: 'Components',
+        type: 'Components',
         title: 'Dynamic Counter',
         haveExample: true,
         backface: {
