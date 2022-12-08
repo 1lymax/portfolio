@@ -1,4 +1,3 @@
-import {API_URL} from "../data/config";
 import {myWorksData} from "../data/myWorksData";
 
 export const getDirFilePath = (workId: number) => {
@@ -18,5 +17,5 @@ export const imageAnimatedPath = (workId: number) => {
 
 export const workDemoPath = (workId: number) => {
     if (!workId) return ''
-    return `${API_URL}/works/${getDirFilePath(workId)}/index.html`
+    return `/works/${getDirFilePath(workId)}/index.html`
 }
