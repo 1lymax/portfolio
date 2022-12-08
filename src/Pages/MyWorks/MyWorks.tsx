@@ -40,7 +40,7 @@ const MyWorks: FC<MyWorksProps> = ({works, worksType, setModalId}) => {
 
     useEffect(() => {
         setWorksShow(works.filter(work => work.type === worksType[0]))
-    }, []);
+    }, [works, worksType]);
 
     useEffect(() => VanillaTilt.init(document.querySelectorAll(".card"), {
         max: 25,
